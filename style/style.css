@@ -1,0 +1,10 @@
+
+nav ul{
+    display: flex;
+}
+.nav--link{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+
+}
