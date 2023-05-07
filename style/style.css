@@ -1,10 +1,263 @@
-
-nav ul{
+header{
+    padding: 16px 0;
+}
+.home{
+    position: relative;
+}
+.home::before{
+    position: absolute;
+    content: url(../img/primary.blur.png);
+    left: -400px;
+    top: -550px;
+}
+.home::after{
+    position: absolute;
+    content: url(../img/green.blur.png);
+    left: -500px;
+    top: 100px;
+    transform: rotate(180deg);
+}
+.nav::before{
+    position: absolute;
+    content: url(../img/primary.blur.png);
+    right: 0;
+    top: 250px;
+}
+.nav::after{
+    position: absolute;
+    content: url(../img/green.blur.png);
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+.nav{
+    position: relative;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bi-globe{
+    font-size: 24px;
+}
+.logo{
+    display: flex;
+    gap: 20px;
+}
+.open--menu{
+    font-size: 32px;
+    font-weight: 900;
+    display: none;
+}
+.nav--ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
 }
 .nav--link{
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 16px;
     font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black);
+}
+.welcome{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 19.92px;
+    text-transform: uppercase;
+}
 
+.bi-person{
+    display: none;
+}
+.home__btn{
+    display: flex;
+    gap: 16px;
+    margin: 18px auto;
+}
+
+.messenger--icon{
+    font-size: 54px;
+    margin: 32px 0;
+}
+.youtube{
+    padding: 150px 0;
+}
+footer{
+    padding: calc(16px + 5.55556vw) 0;
+    background-color: var(--black);
+}
+.dark{
+    filter: brightness(0) invert(1);
+}
+.footer__row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer--title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--white);
+    margin: 0 0 45px 0;
+} 
+.footer--ul li{
+    margin: 30px 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Outfit', sans-serif;
+}
+.footer--connect {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.footer--connect .bi{
+    font-size: 28px;
+}
+.domen a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px; 
+    font-family: 'Outfit', sans-serif;
+}
+.coming{
+    position: relative;
+    color: grey !important;
+
+}
+.coming::after{
+    position: absolute;
+    content: 'Coming soon';
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    padding: 7px 0px;
+    width: 90px;
+    left: 95px;
+    color: var(--white);
+}
+.new{
+    position: relative;
+}
+.new::after{
+    position: absolute;
+    content: 'NEW';
+    background: #FB4E4E;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    padding: 7px;
+    color: var(--white);
+    left: 74px;
+    top: 2px;
+}
+.youtube{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.youtube__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.app--store{
+    display: flex;
+    gap: 16px;
+}
+@media screen and (max-width:1460px){
+    .new::after,
+    .coming::after{
+        top: 30px;
+        left: 0;
+    }
+    .youtube--box{
+        width: 49%;
+    }
+    .youtube--box iframe{
+        width: 100%;
+    }
+  }
+@media screen and (max-width:991px){
+    .home--link span,
+    .home--link .bi-lightning-charge,
+    .learn{
+        display: none;
+    }
+    .bi-person{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width:760px){
+    .messenger__box{
+        width: 100%;
+    }
+    .messenger__box iframe{
+        width: 100%;
+    }
+    .youtube__content{
+        justify-content: center;
+    }
+    .welcome{
+        letter-spacing: 12px;
+    }
+   .open--menu{
+        display: block;
+   }
+   .page--name{
+    display: none;
+   }
+   .youtube--box{
+    width: 100%;
+   }
+   .footer--col:nth-child(1) .footer--ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+   }
+   .footer--title{
+    margin: 0;
+    font-size: 18px;
+   }
+   .footer--col li{
+    margin: 12px 0;
+    font-size: 18px;
+   }
+   .footer--ul{
+    margin: 12px 0;
+   }
+   .footer--ul{
+    display: flex;
+    flex-direction: row;
+    gap:0 16px ;
+    flex-wrap: wrap;
+   }
+   .footer__row{
+    display: flex;
+    flex-direction: column;
+   }
+
+}
+
+@media screen and (max-width:496px){
+    .home__btn{
+        flex-direction: column;
+    }
+    .home .welcome, .home .heading{
+        text-align: center;
+        line-height: 50px;
+    }
 }

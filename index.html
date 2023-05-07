@@ -5,30 +5,265 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Community</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">
-            <img src="./img/logo-full.svg" alt="Neosify logo">
+      <nav class="nav container">
+        <div class="logo ">
+          <div class="open--menu">
+            <i class="bi bi-list"></i>
+          </div>
+          <img src="./img/logo-full.svg" alt="Neosify logo" />
         </div>
-        <ul>
-          <li><a class="nav--link" href="">Products</a></li>
-          <li><a class="nav--link" href="">Company</a></li>
-          <li><a class="nav--link" href="">Learn</a></li>
-          <li><a class="nav--link" href="">Blog</a></li>
-          <li><a class="nav--link" href=""><i class="bi bi-globe"></i></a></li>
-          <button class="green">
-            <a class="nav--link"  href="">
-                <span>Connect</span>
-                <i class="bi bi-lightning-charge"></i>
-             </a>
+        <ul class="nav--ul">
+          <li><a class="nav--link page--name" href="">Products</a></li>
+          <li><a class="nav--link page--name" href="">Company</a></li>
+          <li><a class="nav--link page--name" href="">Blog</a></li>
+          <li>
+            <a class="nav--link" href=""><i class="bi bi-globe"></i></a>
+          </li>
+          <li class="learn"><a class="nav--link " href="">Learn</a></li>
+          <button class="green--btn">
+            <a class="btn--link row home--link" href="">
+              <span>Connect</span>
+              <i class="bi bi-lightning-charge"></i>
+              <i class="bi bi-person"></i>
+            </a>
           </button>
         </ul>
       </nav>
     </header>
+    <main>
+      <section class="home container">
+        <h2 class="welcome primary--text">Welcome to the</h2>
+        <h2 class="heading">Neosify Community</h2>
+        <div class="home__btn">
+          <button class="green--btn">
+            <a href="" class="btn--link row">
+              <span>Get Neosify</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </button>
+          <button class="primary--btn">
+            <a href="" class="btn--link row">
+              <span>Watch video</span>
+              <i class="bi bi-caret-right"></i>
+            </a>
+          </button>
+        </div>
+        <div class="footer--connect">
+          <button class="green--btn btn--link">
+            <i class="bi bi-gift"></i>
+          </button>
+          <div class="present--info">
+            <h3>Welcome Gift</h3>
+            <p class="green--text">100 NEOS</p>
+          </div>
+        </div>
+      </section>
+      <section class="messengers row container">
+        <div class="messenger__box">
+          <div class="messenger--icon primary--text">
+            <i class="bi bi-facebook"></i>
+          </div>
+          <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0"
+            nonce="cVZaggxR"></script>
+          <div
+            class="fb-page fb_iframe_widget"
+            data-href="https://www.facebook.com/neosify"
+            data-show-posts="true"
+            data-width="424"
+            data-height="480"
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true"
+            fb-xfbml-state="rendered"
+            fb-iframe-plugin-query="adapt_container_width=true&app_id=&container_width=424&height=480&hide_cover=false&href=https%3A%2F%2Fwww.facebook.com%2Fneosify&locale=en_US&sdk=joey&show_facepile=true&show_posts=true&small_header=false&width=424"></div>
+        </div>
+        <div class="messenger__box">
+          <div class="messenger--icon primary--text">
+            <i class="bi bi-discord"></i>
+          </div>
+          <iframe
+            src="https://discord.com/widget?id=1009105519769817118&theme=dark"
+            width="424"
+            height="480"
+            allowtransparency="true"
+            frameborder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+        <div class="messenger__box">
+          <div class="messenger--icon primary--text">
+            <i class="bi bi-twitter"></i>
+          </div>
+          <iframe
+            src="https://discord.com/widget?id=1009105519769817118&theme=dark"
+            width="424"
+            height="480"
+            allowtransparency="true"
+            frameborder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+      </section>
+      <section class="container youtube">
+        <div class="messenger--icon primary--text">
+          <i class="bi bi-youtube"></i>
+        </div>
+        <div class="youtube__content">
+          <div class="youtube--box">
+            <iframe
+              width="568"
+              height="376"
+              src="https://www.youtube.com/embed/Nmni5G-5jZs"
+              title="Bog‘chadagi KATTALAR o‘yini | SUBYEKTIV"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="youtube--box">
+            <iframe
+              width="568"
+              height="376"
+              src="https://www.youtube.com/embed/xZDCAuwh-1w"
+              title="Mubashshir Ahmad:"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="youtube--box">
+            <iframe
+              width="568"
+              height="376"
+              src="https://www.youtube.com/embed/PdSMXnT30Ig"
+              title="Germaniyada O&#39;qish va Ishlash"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="youtube--box">
+            <iframe
+              width="568"
+              height="376"
+              src="https://www.youtube.com/embed/yJUZv_3uJLw"
+              title="9 yil grantda o&#39;qib, Yaponiyaning eng ilg&#39;or universitetidan PhD daraja olgan olim bilan suhbat"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="home__btn">
+          <button class="primary--btn center">
+            <a href="" class="btn--link row">
+              <span>Show more videos</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer__row">
+        <div class="footer--col">
+          <div class="logo dark">
+            <img src="./img/logo-full.svg" alt="" />
+          </div>
+          <ul class="footer--ul">
+            <li class="footer--connect">
+              <a class="grey--text" href="">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a class="grey--text" href="">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a class="grey--text" href="">
+                <i class="bi bi-telegram"></i>
+              </a>
+              <a class="grey--text" href="">
+                <i class="bi bi-discord"></i>
+              </a>
+              <a class="grey--text" href="">
+                <i class="bi bi-medium"></i>
+              </a>
+              <a class="grey--text" href="">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a class="grey--text app--store" href="">
+                <img src="./img/app.png" alt="app store" />
+                <img src="./img/google.png" alt="google play" />
+              </a>
+            </li>
+            <li class="footer--connect">
+              <a class="grey--text" href="">
+                <img src="./img/trustpilot.png" alt="trustpilot" /><br>
+                <img src="./img/stars.png" alt="stars" />
+              </a>
+              <a class="grey--text footer--connect" href="">
+                <img src="./img/govuk.png" alt="govuk" />
+                <p class="grey--text">
+                  NEOSIFY LTD © 2023
+                </p>
+              </a>
+            </li>
+            <li class="footer--icon domen">
+              <a class="grey--text" href="">neosify.cc</a>
+              <a class="grey--text" href="">neosify.co</a>
+              <a class="grey--text" href="">neosify.net</a><br>
+              <a class="grey--text" href="">neosify.org</a>
+              <a class="grey--text" href="">neosify.info</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer--col">
+          <h2 class="footer--title">Products</h2>
+          <ul class="footer--ul">
+            <li><a class="grey--text" href="">Staking</a></li>
+            <li><a class="grey--text coming" href="">Liquidity</a></li>
+            <li><a class="grey--text" href="">Red Pill</a></li>
+            <li><a class="grey--text new" href="">Levels</a></li>
+            <li><a class="grey--text" href="">Rewards</a></li>
+          </ul>
+        </div>
+        <div class="footer--col">
+          <h2 class="footer--title">Company</h2>
+          <ul class="footer--ul">
+            <li><a class="grey--text" href="">About</a></li>
+            <li><a class="grey--text" href="">Ecosystem</a></li>
+            <li><a class="grey--text" href="">Matrix Tech </a></li>
+            <li><a class="grey--text" href="">Community</a></li>
+            <li><a class="grey--text" href="">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="footer--col">
+          <h2 class="footer--title">Learn</h2>
+          <ul class="footer--ul">
+            <li><a class="grey--text" href="">Blog</a></li>
+            <li><a class="grey--text" href="">Documentation</a></li>
+            <li><a class="grey--text" href="">FAQ</a></li>
+            <li><a class="grey--text" href="">Get Help</a></li>
+          </ul>
+        </div>
+        <div class="footer--col">
+          <h2 class="footer--title">Legal</h2>
+          <ul class="footer--ul">
+            <li><a class="grey--text" href="">Terms of Use</a></li>
+            <li><a class="grey--text" href="">Privacy Policy</a></li>
+            <li><a class="grey--text" href="">Legal Information</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
